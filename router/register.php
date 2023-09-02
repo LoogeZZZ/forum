@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__.'/../boot.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,20 +11,16 @@
     <title>Sign up</title>
 </head>
 <body class="Login">
-    <form action="action_page.php">
+
+    <form action="do_register.php" method="POST">
         <div class="container">
             <h1>Sign Up</h1>
-            <p>Please fill in this form to create an account.</p>
+            <?php flash(); ?>
+            <label for="username"><b>Login</b></label>
+            <input class="Loginname" type="text" placeholder="Enter Login" name="username" id="username" required>
 
-            <label for="email"><b>Login</b></label>
-            <input class="Loginname" type="text" placeholder="Enter Login" name="text" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input class="Loginpassword" type="password" placeholder="Enter Password" name="psw" required>
-
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input class="Loginpassword" type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
+            <label for="password"><b>Password</b></label>
+            <input class="Loginpassword" type="password" placeholder="Enter Password" name="password" id="password" required>
             <p>By creating an account you agree to our <a href="#" style="color:dodgerblue" class="terms">Terms & Privacy</a>.</p>
 
             <div class="clearfix">

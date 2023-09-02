@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__.'/../boot.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +12,16 @@
     <title>Log In Page</title>
 </head>
 <body class="Login">
-<form action="action_page.php" method="post">
+<form action="do_login.php" method="post">
   <div class="container">
-    <label for="uname" class="usr"><b>Username</b></label>
-    <input class="Loginname"type="text" placeholder="Enter Username" name="uname" required>
+    <label for="username" class="usr"><b>Username</b></label>
+    <input class="Loginname"type="text" placeholder="Enter Username" name="username" id="username" required>
 
-    <label for="psw" class="pswd"><b>Password</b></label>
-    <input class="Loginpassword"type="password" placeholder="Enter Password" name="psw" required>
+    <label for="password" class="pswd"><b>Password</b></label>
+    <input class="Loginpassword"type="password" placeholder="Enter Password" name="password" id="password" required>
 
     <button type="submit">Login</button>
+    <?php flash() ?>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
