@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: #222;
+
+}
+
+a{
+    text-decoration: none;
+    padding: 0px 30px 0px 30px;
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+.Link:hover{
+    text-decoration: underline;
+    color: red;
+    transition: 1000ms;
+}
+header{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1B1B1B;
+}
+.topnav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.Log-In-button{
+    background-color: #006BB8;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 30px;
+    border-radius: 6px;
+}
+.Log-In-button:hover{
+    background-color: #008cf0;
+    transition: 1000ms;
+}
+.Searchbox{
+    color: #ccc;
+    height: 24px;
+    padding: 0 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: #2E2E2E;
+}
+@media screen and (max-width: 600px) {
+    .topnav a, .Searchbox {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+}
+.primary::before{
+    color:  #006BB8;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f002";
+    float: left;
+    margin-right: -36px;
+    width: 36px;
+    text-align: center;
+    position: relative;
+    line-height: 25px;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .sidemenu { 
+        grid-area: 1 / 1 / 2 / 3;
+        height: 90vh;
+        width: 15vw;
+        background-color: #1B1B1B;
+        margin: 25px 20px 0 500px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        color: #ccc;
+    }
+    .messagebox { 
+        grid-area: 1 / 2 / 2 / 3;
+        height: 90vh;
+        width: 32.2vw;
+        background-color: #1B1B1B;
+        margin: 25px 500px 0px 0px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        color: #ccc;
+    }
+  /* Bordered form */
+  
+  /* Full-width inputs */
+  .Loginname[type=text], .Loginpassword[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }  
+
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  .Login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+  }
+  .container{
+    padding: 16px;
+    color: #ccc;
+    width: 15vw;
+    height: 50vh;
+  }
+  .pswd::after{
+    color:  #006BB8;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f023";
+    margin-right: -36px;
+    width: 36px;
+    text-align: center;
+    position: relative;
+    line-height: 25px;
+    font-size: 16px;
+    pointer-events: none;
+}
+.usr::after{
+    color:  #006BB8;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f007";
+    margin-right: -36px;
+    width: 36px;
+    text-align: center;
+    position: relative;
+    line-height: 25px;
+    font-size: 16px;
+    pointer-events: none;
+}
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
+  .terms{
+    padding: 0;
+    margin: 0;
+  }
+  .container > h1{
+    display: flex;
+    justify-content: center;
+  }
